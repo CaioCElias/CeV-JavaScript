@@ -1,0 +1,85 @@
+Operadores:
+    Aritiméticos
+    Atribuição
+    < Relacionais >
+    < Lógicos >
+    < Ternário >
+
+
+Relacionais:
+    [>] Maior que
+    [<] Menor que
+    [>=] Maior ou igual a
+    [<=] Menor ou igual a
+    [==] Igual a
+    [!=] Diferente de
+
+    5 [>] 2 → true
+    7 [<] 4 → false
+    8 [>=] 8 → true
+    9 [<=] 7 → false
+    5 [==] 5 → true
+    4 [!=] 4 → false
+
+    Identidade:
+
+    ! Para o JavaScript, o sinal de == não considera o tipo. Logo 5 == '5'. Não levando em consideração o tipo primitivo.
+    ! Mas para usar uma igualdade RESTRITA (levando em consideração até tipos primitivos) use ===. Ou seja, 5 === 5
+
+    Um exemplo dos resultados são:
+
+    ! 5 == 5    → true
+    ! 5 == '5'  → true
+    ! 5 === 5   → true
+    ! 5 === '5' → false
+
+    Nomenclatura:
+
+    ! x == y <- x é IGUAL a y? (Não leva em consideração o tipo)
+    ! x != y <- x é DIFERENTE de y? (Não leva em consideração o tipo)
+
+    ! x === y <- x é IDÊNTICO a y? (Leva em consideração o tipo)
+    ! x !== y <- x é DESIGUAL RESTRITO a y? (Leva em consideração o tipo)
+
+Lógicos:
+
+    O sinal [!] significa negação
+    O sinal [&&] significa conjunção
+    O sinal [||] significa disjunção
+
+    Exemplo prático:
+    [!] Quero uma caneta, mas não quero uma azul, pode me entregar qualquer cor que ficarei satisfeito, menos azul.
+    [&&] Se eu pedir uma caneta vermelha e uma caneta verde, só vou ficar satisfeito se me entregar as duas cores. 
+    [||] Se eu pedir uma caneta vermelha ou uma caneta verde, vou ficar satisfeito se me entregar ou uma caneta vermelha, ou uma verde, ou as duas, qualquer outra coisa, eu não vou ficar satisfeito.
+
+    [!] !true  = false 
+    [!] !false = true
+
+    true  [&&] true  = true
+    true  [&&] false = false
+    false [&&] true  = false
+    false [&&] false = false
+
+    true  [||] true  = true
+    true  [||] false = true
+    false [||] true  = true
+    false [||] false = false
+
+    Ordem de precedência:
+    () ** /  ...
+    > < >=   ...
+    [!]
+    [&&]
+    [||]
+
+
+Ternário:
+    [?]
+    [:]
+
+    teste ? true : false
+
+    Uma expressão que vai ter um resultado true ou false, e seus resultados, se for verdadeiro, recebe a 1ª função, se for falso, a 2ª.
+
+    Ex: média > 5.0 ? "Aprovado" : "Reprovado"
+    Se média for maior que 5.0, aparecera "Aprovado", se for menor, aparecerá "Reprovado"

@@ -1,0 +1,49 @@
+DOM → Document Object Model
+
+É um conjunto de objetos dentro do navegador que da acesso aos componentes internos no site.
+
+
+Árvore DOM do site que criamos:
+
+                [window]
+                /  |   \
+               /   |    \
+              /    |     \
+             /     |      \
+    [location] [document]  [history]
+                   |
+                   |
+                   |
+                   |
+                 [html]
+                 /    \
+                /      \
+               /        \
+              /          \
+          [head]         [body]
+          /  |          /|  | \
+         /   |         / |  |  \
+        /    |     [h1]  |  |   [div]
+       /     |          [p] [p]
+    [meta] [title]           |
+                             |
+                           [strong]
+
+
+
+Selecionando:
+
+    por Marca
+        getElementsByTagName()
+    por ID
+        getElementsByID()
+    por Nome
+        getElementsByName()
+    por Classe
+        getElementsByClassName()
+    por Seletor
+        querySelector()
+        querySelectorAll()
+
+        Se é div, usa #
+        Se é class, usa .           

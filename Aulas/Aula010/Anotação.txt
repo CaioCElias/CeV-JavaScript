@@ -1,0 +1,16 @@
+Função:
+
+Função sem nome
+function {
+
+}
+
+Função com nome e SEM parametros
+function NOME() {
+
+}
+
+Função com nome e COM parametros
+function NOME(parametro) {
+    
+}

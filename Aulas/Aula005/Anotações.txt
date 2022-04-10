@@ -1,0 +1,63 @@
+Existem 3 jeitos de declarar uma variável:
+var ; let ; const
+
+Cada uma dessas funções serve para declarar uma variável, mas cada uma funciona de um jeito diferente
+Em todos a estrutura para criar a variável é: '{var/let/const} {nome_da_variável} = {Atribuição};'
+
+
+VAR x LET x CONST:
+Var:
+É uma variável global, uma vez declarada, funciona em QUALQUER lugar do código
+A atribuição pode ser alterada quantas vezes quiser
+Exemplo: "var numero = 1;" → "numero = 2;" → "numero = 3;"
+
+Hoje em dia, por conta do hoisting do var, não é recomendado usar ele
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x//
+
+Let:
+Só funciona dentro do escopo e subs-escopos onde ela foi escrita.
+Para usar no programa inteiro, é preciso atribuír fora de uma indentação
+
+Só usar caso pretender mudar a variável futuramente
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x//
+
+Const:
+Bem parecido com o Let, tem as mesmas regras de existência.
+O tipo primitivo não pode ser mudado, mas conseguimos alterar o valor acessando a propriedade do objeto
+Exemplo ERRADO: const teste = {nome: 'Caio'}; → teste = {nome: 'Cesar'};
+Exemplo CORRETO: const teste = {nome: 'Caio'}; → teste.nome = 'Cesar';
+
+É mais recomendável usar o const, para ter certeza que a variável não vai mudar
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x//
+
+As variáveis tem regra para serem criadas. As regras são:
+1. Pode começar com LETRA, $ ou _
+2. Não pode começar com números
+3. É possível usar letras ou números
+4. É possível utilizar acentos e símbolos
+5. Não podem conter espaços
+6. Não podem ser palavras que são usadas pelo JavaScript para comandos
+7. Letras maiúsculas e minúsculas fazem diferença
+
+Dicas para nomes de variáveis:
+1. Tente escolher nomes que façam sentido
+2. Evite usar variáveis genéricas, como: "a", "b", "c", "x", "y", "z", "n1", "n2", "n3"...
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x//
+
+Números de qualquer jeito (fora de aspas), são considerados NUMBER
+Palavras, ou números dentro de aspas '' ou "", ou ``. São considerados STRING
+true e false são considerados boolean
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x//
+
+Data Types
+Number → Infinity, NaN (Not A Number)
+String
+Boolean
+Null
+Undefined
+Object → Array
+Function
+
+Para descobrir o tipo de um valor, podemos usar o comando "typeof"

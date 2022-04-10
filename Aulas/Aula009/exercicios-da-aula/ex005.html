@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 09</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique em mim</div>
+    <script>
+        const corpo = window.document.body // Cria a váriavel para o background
+        const p1 = window.document.getElementsByTagName('p')[1] // Cria a variável para o parágrafo 0
+        const d = window.document.getElementById('msg')
+
+        d.style.background = 'green' // Colocar bg na div
+        d.innerText = 'Estou aguardando...' //Mudar a div
+
+        window.document.write(`Está escrito assim: ${p1.innerText} </br>`) // Mostra o parágrafo que eu selecionei
+        window.document.write(`Está escrito assim: ${p1.innerHTML} </br>`) // Mostra o parágrafo que eu selecionei, com a formatação
+
+        p1.style.color = 'orange' // muda a cor da variavel p1
+        corpo.style.background = 'black' // muda o background
+
+        window.document.write('<br>') // Quebra de linha
+
+        window.document.write('Olá, mundo! </br>') // Mostra 'Olá, mundo!' na tela
+        window.document.write(window.document.URL) // Mostra a URL na tela
+    </script>
+</body>
+</html>

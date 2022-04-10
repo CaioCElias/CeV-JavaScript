@@ -1,0 +1,56 @@
+<!-- Comentário em HTML -->
+
+/* Comentário em CSS */
+
+// Comentário em JavaScript
+
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x
+
+Se não for declarado o tipo da variável em inputs, por padrão será string
+
+String → Number
+Number.parseInt(n) / Number.parseFloat(n) // Jeito forçado de um valor
+    ou parseInt(n)       ou parseFloat(n)
+
+Number() // Jeito genérico de um valor
+
+Number → String
+
+String(n) / n.toString()
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x
+
+Para escrever variáveis, sem ter que usar o +, utilize `${}` (entre crases)
+
+Alguns comandos:
+s.length // Quantos caracteres a string tem
+s.toUpperCase // TRANSFORMA EM LETRAS MAIÚSCULAS
+s.toLowerCase // transforma em letras minúsculas
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x
+
+Para escrever na página, um documento escrito, podemos usar "document.write('SEU TEXTO AQUI. </br>')" o </br> serve para quebrar uma linha em html, tipo o \n.
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x
+
+Podemos colocar casas decimais usando o comando:
+n.toFixed(numero de casas decimais)
+
+Para mudar algo na variavel, podemos usar o .replace()
+ex:
+const numero = 1545.5
+numero.toFixed(2) // → Para deixar 2 casas decimais, ou seja, 1545.50
+numero.replace('.', ',') // → Substitui o ponto pela vírgula
+
+=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x=x
+
+Comando curiosidade:
+Para definir uma string em real, dólar, etc. Há um comando recomendado pelo Gustavo Guanabara
+
+const valor = 1500
+valor.toLocaleString('pt-BR, {style: 'currency', currency: 'BRL'}')
+resultado: R$ 1500
+
+valor.toLocaleString('pt-BR, {style: 'currency', currency: 'USD'}')
+resultado: US$ 1500

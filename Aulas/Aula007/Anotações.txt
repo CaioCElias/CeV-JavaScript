@@ -1,0 +1,40 @@
+Operadores:
+    < Aritiméticos >
+    < Atribuição >
+    Relacionais
+    Lógicos
+    Ternário
+
+Aritiméticos:
+[+] Mais
+[-] Menos
+[*] Vezes
+[/] Dividido
+[%] Restante
+[**] Elevado
+
+5 [+] 2 → 5+2 = 7 (Soma os dois valores)
+5 [-] 2 → 5-2 = 3 (Substrai os dois valores)
+5 [*] 2 → 5*2 = 10 (Multiplica os dois valores)
+5 [/] 2 → 5/2 = 2.5 (Divide os dois valores)
+5 [%] 2 → 5%2 = 1 (Divide os valores. Quanto tiver que usar vírgula ele para. Pega o restante que sobrou)
+5 [**] 2 → 5² = 25 (Faz o 1º fator, elevado ao 2º fator)
+
+Ordem de precedência (a mesma da matemática)
+() → ** → * / % → + -
+
+Igual ao python, o JavaScript aceita os termos:
+
+x = 10
+x += 2
+x = 12
+
+Mas para o JavaScript, tem como simplificar caso você queira adicionar apenas 1 digito ao valor, a simplificação é:
+
+x = 10
+x++
+x = 11
+
+y = 10
+y--
+y = 9
